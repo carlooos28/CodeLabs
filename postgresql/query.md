@@ -51,3 +51,15 @@ SELECT
 FROM
  usuarios
 INNER JOIN rol ON rol.id = usuarios.rol_id;
+
+
+SELECT
+	*
+FROM
+ usuarios
+INNER JOIN rol ON rol.id = usuarios.rol_id
+WHERE
+ rol.id = 1
+ORDER BY
+ usuarios.id desc;
+
