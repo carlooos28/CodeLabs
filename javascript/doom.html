@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>:)</title>	
+</head>
+<body id="page">
+	<p>Sketch</p>	
+	<p>Wireframe</p>	
+	<p>Mockup</p>	
+	<p>Prototipo Html</p>	
+
+	<div id="lenguaje">
+		Javascript :)
+	</div>
+
+	<br>
+
+	<button id="consignar">Consignar dinero</button>
+
+	<script type="text/javascript">
+
+		// getElementsByTagName 
+
+		var parrafos = document.getElementsByTagName("p");
+		var primerParrafo = parrafos[0];
+
+		console.log(parrafos);
+		console.log(primerParrafo.innerHTML);
+
+		for(var i=0; i<parrafos.length; i++) {
+		  console.log(" - "+parrafos[i].innerHTML);
+		}
+
+		// getElementById
+
+		var lenguaje = document.getElementById("lenguaje");
+		console.log("Información "+lenguaje.innerHTML);
+
+		var btn = document.getElementById("consignar");
+			btn.addEventListener("click", sumaConsignar);
+
+			function sumaConsignar(){
+
+				let dato = prompt("Ingresa el valor a consignar");
+				alert("Consignación Efectiva :) "+dato)
+
+				document.getElementById("page").style.background = "#7CEBFF";
+				document.getElementById("page").style.color = "#E8AA0C";
+			}
+
+	</script>
+
+</body>
+</html>
