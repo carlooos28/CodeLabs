@@ -6,3 +6,26 @@ Proyecto wakaya
 
 <%= javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' %>
 <%= javascript_include_tag 'https://cdn.datatables.net/s/dt/dt-1.10.10,r-2.0.0/datatables.min.js' %>
+
+
+
+
+gem 'pg'
+
+bundle update
+
+config/database.yml
+
+development:
+  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  username: postgres
+  password: ''
+  database: curso_postgresql
+
+rails generate scaffold User name:string email:string
+
+rake db:migrate
