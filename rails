@@ -1,0 +1,8 @@
+<%= stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' %>
+<%= stylesheet_link_tag    'https://cdn.datatables.net/s/dt/dt-1.10.10,r-2.0.0/datatables.min.css' %>
+Proyecto wakaya
+<h1>Proyecto#index</h1>
+<p>Find me in app/views/proyecto/index.html.erb</p>
+
+<%= javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' %>
+<%= javascript_include_tag 'https://cdn.datatables.net/s/dt/dt-1.10.10,r-2.0.0/datatables.min.js' %>
