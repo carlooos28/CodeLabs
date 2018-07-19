@@ -10,11 +10,57 @@ Proyecto wakaya
 
 
 
+
+Instalación node 
+Instalacion Ruby 
+Ruby 2.4 
+Instalacion ruby on rails
+Rails 5.2 
+
+--- 
+
+Comandos ruby y ruby on rails
+
+---
+
+# Verificar versión ruby
+ruby -v
+
+# Instalar Rails
+gem install rails 
+
+# verificar version rails
+rails --version 
+
+# Creando una nueva applicación
+rails new blog
+
+# Inicializando Rails
+rails s 
+
+# Crear un controlador
+rails generate controller welcome index
+
+# Verificar rutas
+bin/rake routes 
+	
+# error de pid
+Finalizar proceso ruby 
+
+# conexion posgresql
+# cuando no tenga creado el proyecto
+gem install pg 
+
+---
+
+# si ya esta instalado el proyecto
+# agregar al gemfile
 gem 'pg'
 
-bundle update
+# depues de instalada 
+bundle update 
 
-config/database.yml
+# configurar config/database.yml
 
 development:
   <<: *default
@@ -26,6 +72,13 @@ development:
   password: ''
   database: curso_postgresql
 
+---
+
+# comando scaffold 
 rails generate scaffold User name:string email:string
 
+# Correr migraciones 
 rake db:migrate
+
+
+
