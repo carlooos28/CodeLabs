@@ -80,5 +80,7 @@ rails generate scaffold User name:string email:string
 # Correr migraciones 
 rake db:migrate
 
+# root routes rails
+root :to => "pages#show"
 
 
