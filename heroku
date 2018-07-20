@@ -41,4 +41,4 @@ git remote add heroku  https://git.heroku.com/glacial-brushlands-68251.git
 git push heroku master 
 
 # Ejecutar migraciones 
-run rake db:migrate 
+heroku run rake db:migrate 
