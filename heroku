@@ -1,0 +1,44 @@
+# crear cuenta en heroku
+
+# descargar cliente heroku windows
+https://devcenter.heroku.com/articles/heroku-cli#download-and-install
+
+# verificar version heroku
+heroku --version
+
+# iniciar sesion
+heroku login
+
+# crear app
+heroku create
+
+# agregar repositorio remoto a nuestro proyecto 
+git remote add heroku  https://git.heroku.com/glacial.git
+
+# Crear base de datos posgresql en heroku
+- Da click en Heroku Postgres::Database y elige el plan gratuito.
+
+# configurar base de datos config/database.yml
+  url: postgres://leytssaihcjsyq
+
+# Crear archivo raiz proyecto
+touch Procfile 
+
+# añadir la linea 
+web: bundle exec puma -C config/puma.rb
+
+# comentarar en el gemfile la gema sqlite3
+# gem 'sqlite3'
+
+
+#  commit de tus cambios y tu app ya está lista para ser subida a Heroku.
+ git push heroku master
+
+git remote add heroku  https://git.heroku.com/glacial-brushlands-68251.git
+
+
+# enviar rama principal
+git push heroku master 
+
+# Ejecutar migraciones 
+run rake db:migrate 
