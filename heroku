@@ -10,7 +10,7 @@ heroku --version
 heroku login
 
 # crear app
-heroku create
+heroku create nombreapplicación
 
 # agregar repositorio remoto a nuestro proyecto 
 git remote add heroku  https://git.heroku.com/glacial.git
@@ -31,10 +31,8 @@ web: bundle exec puma -C config/puma.rb
 # gem 'sqlite3'
 
 
-#  commit de tus cambios y tu app ya está lista para ser subida a Heroku.
+# commit de tus cambios y tu app ya está lista para ser subida a Heroku.
  git push heroku master
-
-git remote add heroku  https://git.heroku.com/glacial-brushlands-68251.git
 
 
 # enviar rama principal
