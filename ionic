@@ -47,3 +47,13 @@ public actionSheetCtrl: ActionSheetController
 <button ion-button color="secondary">Secondary</button>
 <button ion-button color="danger">Danger</button>
 <button ion-button color="dark">Dark</button>
+
+
+
+
+<ion-list>
+<button ion-item *ngFor="let item of items"
+(click)="itemSelected(item)">
+{{ item }}
+</button>  
+</ion-list>
