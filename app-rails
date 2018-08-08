@@ -1,0 +1,5 @@
+gem 'pg'
+
+gem 'devise'
+
+gem 'bootstrap', '~> 4.1.3'
