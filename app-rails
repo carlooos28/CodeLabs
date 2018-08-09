@@ -11,3 +11,9 @@ rails generate devise:install
 rails generate devise User
 rails db:migrate
 rails s 
+
+
+
+ <% if current_user %>
+  Hola, <%= current_user.firstname %>.
+<% end %>
