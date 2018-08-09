@@ -17,3 +17,18 @@ rails s
  <% if current_user %>
   Hola, <%= current_user.firstname %>.
 <% end %>
+
+
+
+            <% if current_user %>
+              
+              <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete, :class => 'text-white' %>
+              
+            <% else %>
+             
+                  <%= link_to 'Iniciar sesión', new_user_session_path, :class => 'text-white' %>
+                  
+              
+                  <%= link_to 'Registrarse', new_user_registration_path, :class => 'text-white' %>
+                  
+            <% end %>
