@@ -96,3 +96,78 @@ just accepted your friend request!'
   </ion-slide>
 
 </ion-slides>
+
+
+
+
+
+
+
+
+
+
+
+
+
+###################################################################
+# contact.ts
+
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
+
+@Component({
+  selector: 'page-contact',
+  templateUrl: 'contact.html'
+})
+export class ContactPage {
+
+  users: any[] = [];
+
+  constructor(public navCtrl: NavController,
+              public userService: UserServiceProvider) {
+
+  }
+
+  ionViewDidLoad(){
+    this.userService.getUsers()
+    .subscribe(
+      (data) => { // Success
+        this.users = data['results'];
+      },
+      (error) =>{
+        console.error(error);
+      }
+    )
+  }
+
+
+}
+
+###################################################################
+
+
+# contact.html
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Users FedeSoft
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let user of users">
+      <ion-avatar item-start>
+        <img [src]="user.picture.medium">
+      </ion-avatar>
+      <h2>{{ user.name.first | uppercase }}</h2>
+      <p>{{ user.email }}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+
+###################################################################
