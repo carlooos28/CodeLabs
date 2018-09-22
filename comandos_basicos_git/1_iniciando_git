@@ -1,2 +1,11 @@
+# Descargar Git
 https://git-scm.com/downloads
+
+# Buscar git en Windows / Linux / Mac
 git bash 
+
+Tu Identidad
+git config --global user.name "Jhon Doe"
+git config --global user.email tucorreo@gmail.com 
+
+
