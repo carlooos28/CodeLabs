@@ -80,5 +80,8 @@ rake db:migrate
 root :to => "pages#show"
 
 --- 
-
+# Relaciones en rails 
+rails g scaffold list name
+rails g scaffold task name list:references
+---
 
