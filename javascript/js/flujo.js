@@ -1,11 +1,8 @@
 // logicos
-
 /* 
- 
  las estructuras de control de flujo, que son instrucciones del 
  tipo "si se cumple esta condición, hazlo; si no se cumple, haz esto otro". 
  También existen instrucciones del tipo "repite esto mientras se cumpla esta condición".
-
 */
 
 var mostrarMensaje = true;
@@ -23,11 +20,8 @@ else {
   // alert("Todavía eres menor de edad");
 }
 
-
 // if anidados
-
 /* 
-
 if(edad < 12) {
   alert("Todavía eres muy pequeño");
 }
@@ -40,9 +34,7 @@ else if(edad < 35) {
 else {
   alert("Piensa en cuidarte un poco más");
 }
-
 */
-
 
 // for 
 
@@ -55,7 +47,6 @@ for(var i = 0; i < 5; i++) {
 }
 
 /*
-
 var dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
  
 for(var i=0; i<7; i++) {
@@ -89,7 +80,6 @@ let item = 0;
 let text = "";
 
 // while
-
 while (item < 10) {
     console.log("The number is " + item);
     item++;
