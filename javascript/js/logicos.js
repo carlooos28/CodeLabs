@@ -1,5 +1,4 @@
 // logicos
-
 /* 
 Uno de los operadores lógicos más utilizados es el de la negación. 
 Se utiliza para obtener el valor contrario al valor de la variable:
@@ -9,29 +8,31 @@ var visible = true;
 // alert(!visible);  // Muestra "false" y no "true"
 
 // AND 
-
 var valor1 = true;
 var valor2 = false;
-resultado2 = valor1 && valor2; // resultado = false
+// resultado = false
+resultado2 = valor1 && valor2; 
 // alert(resultado2) 
 
 valor1 = true;
 valor2 = true;
-resultado2 = valor1 && valor2; // resultado = true
+// resultado = true
+resultado2 = valor1 && valor2; 
 // alert(resultado2) 
 
 // OR 
 
 var valor1 = true;
 var valor2 = false;
-resultado = valor1 || valor2; // resultado = true
+// resultado = true
+resultado = valor1 || valor2; 
  
 valor1 = false;
 valor2 = false;
-resultado = valor1 || valor2; // resultado = false
+// resultado = false
+resultado = valor1 || valor2; 
 
 // matématicos 
-
 var numero1 = 10;
 var numero2 = 5;
  
@@ -41,15 +42,11 @@ resultado = numero2 - 4;        // resultado = 1
 resultado = numero1 * numero2; // resultado = 50
 
 // relacionales 
-
 /* 
-
 Los operadores relacionales definidos por JavaScript son idénticos a los que definen
 las matemáticas: mayor que (>), menor que (<), mayor o igual (>=), menor o 
 igual (<=), igual que (==) y distinto de (!=).
-
 */
-
 
 var numero1 = 3;
 var numero2 = 5;
