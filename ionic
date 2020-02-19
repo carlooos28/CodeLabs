@@ -2,6 +2,10 @@
 - npm install -g @ionic/cli
 ### Crear una app 
 - ionic start myApp tabs
+### Correr App
+- cd myApp
+- ionic serve
+
 ### Templates básicos Ionic 5 
 ionic start myApp3 super --type=ionic-angular
 ionic start myApp3 sidemenu
