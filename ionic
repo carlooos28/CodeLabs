@@ -11,6 +11,10 @@ ionic start myApp3 super --type=ionic-angular
 ionic start myApp3 sidemenu
 ionic start myApp5 maps --type=ionic1
 
+### Lista de templates Ionic 5
+ionic start --list
+
+
 
 :)
 ActionSheetController
