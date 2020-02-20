@@ -170,7 +170,7 @@ export class ContactPage {
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>
-      Users FedeSoft
+      Users COlombia :)
     </ion-title>
   </ion-navbar>
 </ion-header>
